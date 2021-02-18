@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Subjects Data</h1>
+    <br>
+    <table border="1" style="text-align: center; margin-left: auto; margin-right: auto;" >
+        <thead> 
+            <th>Id</th>
+            <th>Subject Name</th>
+        </thead>
+        <% data.forEach((element) => { %>
+            <tr>
+                <td><%= element.id %></td>
+                <td><%= element.subjectName %></td>
+            <%  }) %>
+            </tr>
+    </table>
+</body>
+</html>
